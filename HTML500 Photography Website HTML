@@ -1,0 +1,73 @@
+<!doctype html>
+ <html>
+        <head>
+            <title> Connie Ho Photography </title>
+           <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" href="company.css">
+            
+        </head>
+        <body>
+            <header>
+            
+            <p>
+               <h1>Connie Ho Photography</h1>
+            <em>Photographer based in Vancouver BC </em> <br />
+                        </p>
+                
+            </header>
+            
+                <a class="action" href="mailto:ho.connie10@gmail.com">Contact Me!</a>
+                
+             
+            <section>
+      
+                <img class="brush" src="http://p1.pichost.me/i/63/1873125.jpg" />
+                <img class = "brush" src="http://gallery.photo.net/photo/3474955-md.jpg" />
+                <img class = "brush" src=" http://cdn.wonderfulengineering.com/wp-content/uploads/2014/07/black-and-white-wallpaper-5.jpg" />
+                <img class = "brush" src="http://t.wallpaperweb.org/wallpaper/boats/1600x1200/black_and_white_sailboat.jpg" />
+                        
+               
+     <p> <h3> Packages </h3></p>
+<ul>
+                <li>$45 Deluxe</li>
+                <li>$55 Elite </li>
+                <li>$66 Premium</li>
+                <li>$77 Luxury</li>
+            </ul>   
+
+<p> <h3> Past Work</h3></p>
+<ul>
+                <li>2010</li>
+                <li>2011</li>
+                <li>2012</li>
+                <li>2013</li>
+            </ul>  
+
+<p> <h3> About Me </h3></p>
+<form action="contactus.php" method="post">
+
+    <p>Name:</p>
+    <p><input type="text" name="name" value="Your name"></p>
+
+    <p>Comments: </p>
+    <p><textarea name="comments" rows="5" cols="20">Your comments</textarea></p>
+
+   <p><input type="submit"></p>
+
+</form>
+ 
+
+</img>
+</section>
+
+<footer>
+
+    Any inquiries?<br />
+    Please contact me at:<br />
+           <em> Ho.Connie10@gmail.com</em><br />
+            778-863-9173<br />
+        
+</footer>
+
+</body>
+</html>
