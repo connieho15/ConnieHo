@@ -1,0 +1,2 @@
+serviceClass: com.google.culturalcompass.client.PlaceProviderService
+path: 2957AEE7B64289F43DAB8E7AEFC14651.gwt.rpc
