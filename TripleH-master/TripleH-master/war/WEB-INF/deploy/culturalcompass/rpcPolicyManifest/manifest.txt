@@ -1,0 +1,5 @@
+# Module culturalcompass
+# RPC service class, partial path of RPC policy file
+com.google.culturalcompass.client.PlaceProviderService, 2957AEE7B64289F43DAB8E7AEFC14651.gwt.rpc
+com.google.culturalcompass.client.LoginService, EC87BF89C3CDF483362A9456923597BB.gwt.rpc
+com.google.culturalcompass.client.PlaceService, 838E6AA86FE41D3B32EF48F288F4A74E.gwt.rpc

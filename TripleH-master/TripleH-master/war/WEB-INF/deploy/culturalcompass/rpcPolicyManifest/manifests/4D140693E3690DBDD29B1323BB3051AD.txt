@@ -1,0 +1,2 @@
+serviceClass: com.google.culturalcompass.client.LoginService
+path: EC87BF89C3CDF483362A9456923597BB.gwt.rpc

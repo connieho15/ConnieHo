@@ -1,0 +1,74 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--                                                               -->
+    <!-- Consider inlining CSS to reduce the number of requested files -->
+    <!--                                                               -->
+    <link type="text/css" rel="stylesheet" href="CulturalCompass.css">
+
+    <!--                                           -->
+    <!-- Any title is fine                         -->
+    <!--                                           -->
+    <title>Cultural Compass</title>
+    
+    <!--                                           -->
+    <!-- This script loads your compiled module.   -->
+    <!-- If you add any GWT meta tags, they must   -->
+    <!-- be added before this line.                -->
+    <!--                                           -->
+    <script type="text/javascript" language="javascript" src="culturalcompass/culturalcompass.nocache.js"></script>
+  </head>
+   <script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9olpQBIfDm4xx603RzaaiAqOIstpmzwI&sensor=true">
+    </script> 
+  
+   <script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/directions/json?key=AIzaSyA9olpQBIfDm4xx603RzaaiAqOIstpmzwI&sensor=true">
+    </script> 
+  
+
+  <!--                                           -->
+  <!-- The body can have arbitrary html, or      -->
+  <!-- you can leave the body empty if you want  -->
+  <!-- to create a completely dynamic UI.        -->
+  <!--                                           -->
+  <body>
+  
+  
+    <!-- OPTIONAL: include this if you want history support -->
+    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+    
+    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+    <noscript>
+      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+        Your web browser must have JavaScript enabled
+        in order for this application to display correctly.
+      </div>
+    </noscript>
+
+    
+    <div id="gwtContainer">
+    <h1>Cultural Compass</h1>
+    <img src="http://previews.123rf.com/images/favetelinguis/favetelinguis1505/favetelinguis150500076/40317791-Vector-seamless-pattern-with-hand-drawn-japanese-symbols-including-geisha-sakura-bonsai-lantern-Cute-Stock-Vector.jpg">
+    </div>
+    <table align="center">
+      <tr>
+<!--         <td colspan="2" style="font-weight:bold;">Please enter your name:</td>         -->
+      </tr>
+      <tr>
+        <td id="nameFieldContainer"></td>
+        <td id="sendButtonContainer"></td>
+      </tr>
+      <tr>
+        <td colspan="2" style="color:red;" id="errorLabelContainer"></td>
+      </tr>
+    </table>
+  </body>
+</html>
