@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Info</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap:
+https://ssl.gstatic.com https://query.yahooapis.com 'unsafe-eval'; style-src 'self'
+          'unsafe-inline'; media-src *">
+</head>
+<body>
+    <script src="scripts/admin.js"></script>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/Map.js"></script>
+    <script src="scripts/info.js"></script>
+
+    <h1 id="app-title">Info</h1>
+    <div>
+        Results: <input type="text" id="name" />
+        <br />
+        Summary: <input type="text" id="empnum" />
+    </div>
+   
+    <div>
+        <button id="submit">Submit Information!</button>
+    </div>
+
+    <div>
+        <div>Name:</div>
+        <div id="namee"></div>
+    </div>
+    <div>
+        <div>Employee Number:</div>
+        <div id="empnume"></div>
+    </div>
+    <div>
+        <a class="pure-button" href="#">A Pure Button</a>
+        <button class="pure-button" id="confirm">Confirmed!</button>
+        <button id="clear">Clear</button>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+</body>
+</html>

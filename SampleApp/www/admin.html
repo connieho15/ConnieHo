@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin</title>
+    <link href="css/index.css" rel="stylesheet" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+
+
+</head>
+<body>
+    <script src="scripts/admin.js"></script>
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/Map.js"></script>
+    <script src="scripts/info.js"></script>
+
+
+    <div>
+        <button id="viewinfo">View Information!</button>
+    </div>
+    <div class="flex">
+        <div>Data:</div>
+        <div id="nameadmin"></div>
+    </div>
+    <div class="flex">
+        <div>Results Summary:</div>
+        <div id="empnumadmin"></div>
+    </div>
+
+
+    <div>
+        <button id="deleteinfo">Delete Information!</button>
+    </div>
+
+    
+    Delete Employee Number: <input type="text" id="delempnum" />
+
+</body>
+</html>

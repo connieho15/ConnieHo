@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Application</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+        h1 {
+            font-family: sans-serif;
+            font-size: 43px;
+        }
+
+        body {
+            color: darkslategray;
+            font-family: Helvetica; 
+
+        }
+
+        div {
+            padding: 3px 3px 2px 2px;
+        }
+
+        li {
+            border: 1px solid;
+            border-color: lavender;
+        }
+
+        button {
+            border: 1px darkslategray;
+            margin: 3px;
+            padding: 6px;
+            display: inline-block;
+            font-size: 14px;
+            font-family: Sans-Serif;
+            color: rgba(0,0,0,1);
+        }
+
+        input, select, textarea {
+            color: steelblue;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="scripts/jquery-2.1.4.min.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/Map.js"></script>
+    <script src="scripts/info.js"></script>
+    <script src="scripts/admin.js"></script>
+
+    <div><center><h1>Form Application</h1></center></div>
+
+    <div class="container">
+
+        <ul class="nav nav-pills">
+            <li class="active"><a data-toggle="pill" href=#home>Home</a></li>
+            <li><a data-toggle="pill" href=#info>Form 1</a></li>
+            <li><a data-toggle="pill" href="#admin">Admin</a></li>
+            <!--<li><a data-toggle="pill" href=#weather>Weather</a></li>
+            <li><a data-toggle="pill" href=#map>Map</a></li>-->
+
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h2>Welcome</h2>
+                <p>
+                    Instructions
+                    Instructions
+                    Instructions
+                </p>
+            </div>
+            <div id="admin" class="tab-pane fade">
+                <script src="scripts/admin.js"></script>
+                <script src="scripts/jquery-2.1.4.min.js"></script>
+                <script src="scripts/weather.js"></script>
+                <script src="cordova.js"></script>
+                <script src="scripts/platformOverrides.js"></script>
+                <script src="scripts/index.js"></script>
+                <script src="scripts/Map.js"></script>
+                <script src="scripts/info.js"></script>
+                <h2 id="app-title">Records</h2>
+
+                <div>
+                    <button id="viewinfo">View/Refresh</button>
+                </div>
+                <div class="flex">
+                    
+                        <b>Data:</b>
+                    
+                    <p id="results0"></p>
+                    <p id="results1"></p>
+                    <p id="results2"></p>
+                    <p id="results3"></p>
+                    <p id="results4"></p>
+                    <p id="results5"></p>
+                    <p id="results6"></p>
+                    <p id="results7"></p>
+                    <p id="results8"></p>
+                    <p id="results9"></p>
+                </div>
+                <div class="flex">
+                    <div><b>Results Summary:</b></div>
+                    <div id="su"></div>
+                </div>
+                <div>
+                    <h2>Delete Record</h2>
+
+
+                    Delete Employee Number: <input type="text" id="delempnum" />
+                </div>
+                <div>
+                    <button id="deleteinfo">Delete Information</button>
+                </div>
+                <div>
+                    <nav>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+            </div>
+            <div id="weather" class="tab-pane fade">
+
+                <script src="scripts/jquery-2.1.4.min.js"></script>
+                <script src="scripts/weather.js"></script>
+                <script src="cordova.js"></script>
+                <script src="scripts/platformOverrides.js"></script>
+                <script src="scripts/index.js"></script>
+                <script src="scripts/Map.js"></script>
+                <script src="scripts/info.js"></script>
+
+                <h2 id="app-title">Weather</h2>
+                <div>
+                    <label for="zip-code">Zip Code:</label>
+                    <input type="text" id="input-box" />
+                    <button id="get-weather">Get Weather</button>
+                </div>
+                <h3 id="description">Get the Weather</h3>
+                <div class="flex">
+                    <div>Temp</div>
+                    <div id="temp"></div>
+                </div>
+                <div class="flex">
+                    <div>Wind:</div>
+                    <div id="wind"></div>
+                </div>
+                <div class="flex">
+                    <div>Humidity:</div>
+                    <div id="humidity"></div>
+                </div>
+                <div class="flex">
+                    <div>Visibility:</div>
+                    <div id="visibility"></div>
+                </div>
+                <div class="flex">
+                    <div>Sunrise:</div>
+                    <div id="sunrise"></div>
+                </div>
+                <div class="flex">
+                    <div>Sunset:</div>
+                    <div id="sunset"></div>
+                </div>
+                <div>
+                    <nav>
+                        <a href="index.html">Home</a>
+
+                    </nav>
+                </div>
+                <a href="https://www.yahoo.com/?ilc=401" target="_blank">
+                    <img src="https://poweredby.yahoo.com/purple.png" width="134" height="29" />
+                </a>
+
+            </div>
+            <div id="map" class="tab-pane fade">
+
+                <script src="scripts/jquery-2.1.4.min.js"></script>
+                <script src="scripts/weather.js"></script>
+                <script src="cordova.js"></script>
+                <script src="scripts/platformOverrides.js"></script>
+                <script src="scripts/index.js"></script>
+                <script src="scripts/Map.js"></script>
+                <script src="scripts/info.js"></script>
+
+                <h2 id="app-title">Location</h2>
+                <div>
+                    <button id="get-location">Get My Location!</button>
+                </div>
+                <h3 id="description">My Location Is</h3>
+                <div class="flex">
+                    <div>Latitude:</div>
+                    <div id="lat"></div>
+                </div>
+                <div class="flex">
+                    <div>Longitude:</div>
+                    <div id="long"></div>
+                </div>
+                <div>
+                    <nav>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+
+            </div>
+            <div id="info" class="tab-pane fade">
+                <script src="scripts/admin.js"></script>
+                <script src="scripts/jquery-2.1.4.min.js"></script>
+                <script src="scripts/weather.js"></script>
+                <script src="cordova.js"></script>
+                <script src="scripts/platformOverrides.js"></script>
+                <script src="scripts/index.js"></script>
+                <script src="scripts/Map.js"></script>
+                <script src="scripts/info.js"></script>
+
+                <h2 id="app-title">Info</h2>
+                <div>
+                    <b>Name:</b> <input type="text" id="name" /> </div> <div>
+                    <br />
+                    <b>Employee Number:</b><input type="text" id="empnum" />
+                </div>
+                <div>
+                    <button id="submit">Preview</button>
+                </div>
+
+                <div class="flex">
+                    <div><b>Name:</b></div>
+                    <div id="namee"></div>
+                </div>
+                <div class="flex">
+                    <div><b>Employee Number:</b></div>
+                    <div id="empnume"></div>
+                </div>
+                <div>
+                    <button id="confirm">Confirm + Submit </button>
+                    <button id="clear">Clear</button>
+                </div>
+                <div>
+                    <nav>
+                        <a href="index.html">Home</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
