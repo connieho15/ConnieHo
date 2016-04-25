@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <ion-view title="My Profile" id="page3">
+        <ion-content overflow-scroll="true" padding="true" class="has-header" >
+            <ion-list>
+
+            </ion-list>
+            <ion-list>
+                <ion-item class="item-divider"></ion-item>
+                <!-- iterate thru each item in the list, use $index as item identifier -->
+                <ion-item ng-repeat="staff in staffList track by $index">
+                    {{staff}}
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-view>
+</body>
+</html>

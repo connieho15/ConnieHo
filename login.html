@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+    <ion-view title="Login" id="page5" hide-nav-bar="true" onload="getdata()" >
+        <!-- // took away cache view = false, didn't make a difference so i put it back in !-->
+        <ion-content overflow-scroll="true" padding="true" class="has-header">
+            <div class="spacer" style="height: 20px;"></div>
+            <img src="images/deloittelogo.jpg" height="81" width="182">
+            <div class="spacer" style="height: 20px;"></div>    
+            <form class="list">
+                <ion-list>
+                    <!--<label class="item item-input">
+                        <span class="input-label">Username</span>
+                        <input type="text" placeholder="">
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Password</span>
+                        <input type="password" placeholder="">
+                    </label>-->
+                    Please enter your Deloitte network username and password to login
+                    请输入您的用户名称与密码进行登入
+
+
+                    <div class="spacer" style="height: 20px;"></div>
+
+                    <label class="item item-input">
+                        <input type="text" placeholder="Username/用户名称" ng-model="data.username">
+                    </label>
+                    <label class="item item-input">
+                        <input type="password" placeholder="Password/密码" ng-model="data.password">
+                    </label>    
+
+                </ion-list>
+                <div class="spacer" style="height: 20px;"></div>
+                <button class="button button-stable  button-block" ng-click="login()">Login/登入</button>
+
+            </form>
+        </ion-content>
+    </ion-view>
+
+</body>
+</html>

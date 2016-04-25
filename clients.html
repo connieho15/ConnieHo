@@ -1,0 +1,34 @@
+﻿<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<meta charset=utf-8>
+
+<ion-view title="Clients" id="page2" style="background-color:#E9E9E9;">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <ion-list>
+
+            <div ng-controller="clientsCtrl">
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>
+                        <input type="search" placeholder="Search by Client Name or Client Code" ng-model="searchquery">
+                    </label>
+
+                
+
+
+                <button class="button button-stable  button-block" ng-click="getdata(searchquery)">Search</button>
+
+                <ion-list>
+                    <ion-item class="item-divider"></ion-item>
+                    <!-- iterate thru each item in the list, use $index as item identifier -->
+                    <ion-item ng-repeat="client in clientList track by $index">
+                        {{client.ClientCode}} - {{client.ClientName}}
+                    </ion-item>
+
+                </ion-list>
+
+
+
+</div>
+</ion-list>
+    </ion-content>
+</ion-view>
