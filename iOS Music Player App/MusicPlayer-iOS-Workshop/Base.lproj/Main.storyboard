@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Delegate-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PlayerViewController" customModule="MusicPlayer_iOS_Workshop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Gv9-fM-15f">
+                                <rect key="frame" x="32" y="302" width="294" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aH1-eB-YwS">
+                                <rect key="frame" x="171" y="360" width="30" height="25"/>
+                                <state key="normal" title="Play" image="Play"/>
+                                <connections>
+                                    <action selector="playMusic" destination="kq7-HP-Bx9" eventType="touchUpInside" id="NWQ-xi-mBG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utw-wS-9Jf">
+                                <rect key="frame" x="117" y="360" width="46" height="25"/>
+                                <state key="normal" title="Previous" image="Rewind"/>
+                                <connections>
+                                    <action selector="playPreviousSong" destination="kq7-HP-Bx9" eventType="touchUpInside" id="ExR-wo-GHv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vP-gt-I3P">
+                                <rect key="frame" x="216" y="360" width="44" height="25"/>
+                                <state key="normal" title="Next" image="Fast Forward"/>
+                                <connections>
+                                    <action selector="playNextSong" destination="kq7-HP-Bx9" eventType="touchUpInside" id="P4I-L4-6HT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Artist Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhB-Yi-o5p">
+                                <rect key="frame" x="139" y="331" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YQm-o9-PvI">
+                                <rect key="frame" x="32" y="302" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxL-Nx-mhz">
+                                <rect key="frame" x="128" y="312" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNH-Fc-zeR">
+                                <rect key="frame" x="258" y="302" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7T-1n-vu3">
+                                <rect key="frame" x="32" y="116" width="294" height="187"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="artistName" destination="EhB-Yi-o5p" id="68h-W4-CGU"/>
+                        <outlet property="imageView" destination="h7T-1n-vu3" id="YN0-Wl-bb4"/>
+                        <outlet property="mediaPlayer" destination="kq7-HP-Bx9" id="Vzq-Nt-CMI"/>
+                        <outlet property="progressView" destination="Gv9-fM-15f" id="YmN-5o-ZuU"/>
+                        <outlet property="songTitle" destination="xxL-Nx-mhz" id="d0O-od-Gj1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="kq7-HP-Bx9" customClass="MediaPlayer" customModule="MusicPlayer_iOS_Workshop" customModuleProvider="target">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="oxo-ZY-LOe"/>
+                        <outlet property="durationLabel" destination="FNH-Fc-zeR" id="ulV-9u-tzs"/>
+                        <outlet property="progressLabel" destination="YQm-o9-PvI" id="8il-n5-Jma"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="262.5" y="322.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fast Forward" width="25" height="25"/>
+        <image name="Play" width="25" height="25"/>
+        <image name="Rewind" width="25" height="25"/>
+    </resources>
+</document>
