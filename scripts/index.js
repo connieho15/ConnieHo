@@ -44,11 +44,19 @@
 
     // Get the button that opens the modal
     var btn = document.getElementById("myBtn");
+    var resetbtn = document.getElementById("resetBtn")
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
-
+    resetBtn.onclick = function (){
+        var ul = document.getElementById("myUL");
+        var items = ul.getElementsByTagName("li");
+        for (var i = 0; i < items.length; ++i) {
+            items[i].classList.remove('checked');
+        }
+        
+    }
 
     // When the user clicks on the button, open the modal
     btn.onclick = function () {
